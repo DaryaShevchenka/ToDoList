@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TaskListTVC: UITableViewController {
+class TaskListTVC: UITableViewController  {
 
     var arrayUserTasks = [TaskModel]()
 
@@ -33,7 +33,8 @@ class TaskListTVC: UITableViewController {
     @IBAction func showTaskVC(_ sender: Any) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let newVC = storyboard.instantiateViewController(identifier: "vc")
+        let newVC = storyboard.instantiateViewController(identifier: "vc" ) as! TaskVC
+        newVC.saveTaskDeleagate = self
         self.show(newVC, sender: nil)
     }
     

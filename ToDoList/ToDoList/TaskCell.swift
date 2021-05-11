@@ -29,9 +29,11 @@ class TaskCell: UITableViewCell {
         viewCell.backgroundColor = task.taskCellColor
     }
     @IBAction func removeTaskBtnPressed(_ sender: Any) {
+        
     }
    
     @IBAction func executeTaskBtnPressed(_ sender: Any) {
+        
     }
     
 }

@@ -12,8 +12,10 @@ class TaskVC: UIViewController {
     
     @IBOutlet weak var userTaskField: UITextField!
     
-    weak var saveTaskDeleagate: SaveUserTaskDelegate?
+   var saveTaskDeleagate: SaveUserTaskDelegate?
     
+    func saveTask(task: TaskModel){
+  }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,4 +42,5 @@ class TaskVC: UIViewController {
     }
     */
 
+}
 }
